@@ -27,7 +27,7 @@ resource "aws_subnet" "public" {
 
   map_public_ip_on_launch = each.value.public
 
-  tags = {Name = each.key}
+  tags = {Name = each.value.name}
 }
 
 resource "aws_route_table" "public" {
