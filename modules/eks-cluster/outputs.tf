@@ -23,9 +23,9 @@ output "cluster_iam_role_arn" {
   value = aws_iam_role.cluster.arn
 }
 
-output "nodes_iam_role_arn" {
+output "node_iam_role_arn" {
   description = "ARN of the EKS node group IAM role."
-  value = aws_iam_role.nodes.arn
+  value = aws_iam_role.node.arn
 }
 
 output "public_access_cidrs" {
